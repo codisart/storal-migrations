@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Storal\Command;
+use Symfony\Component\Console\Application;
+
+$application = new Application;
+$application->add(new Command\MigrateCommand());
+$application->add(new Command\RollbackCommand());
+$application->add(new Command\NewMigrationCommand);
+$application->add(new Command\NewViewMigrationCommand());
+$application->add(new Command\DumpCommand());
+
+$application->run();
