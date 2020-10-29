@@ -1,0 +1,24 @@
+{
+  "name": "codisart/storal-migrations",
+  "description": "Allow to use migrations with laminas db",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "louis celier",
+      "email": "louis.celier@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/console": "^5.1.5",
+    "laminas/laminas-db": "^2.11.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Storal\\": "src"
+    }
+  }
+}
